@@ -100,12 +100,12 @@ products.map((item) => {
     <h2>${item.model}</h2>
     <p>${item.skidka} <span>${item.sum}</span></p>
     <div class = "icon" >
-    <i class="fa-regular fa-heart">
-      <span class = "like">${count}</span>
-    </i>
-    <i class="fa-solid fa-basket-shopping" onclick="addToCart(${item.id})"></i>
-    <i class="fa-solid fa-rotate-right"></i>
-    <i class="fa-regular fa-eye"></i>
+      <i class="fa-regular fa-heart">
+        <span class = "like">${count}</span>
+      </i>
+      <i class="fa-solid fa-basket-shopping" onclick="addToCart(${item.id})"></i>
+      <i class="fa-solid fa-rotate-right"></i>
+      <i class="fa-regular fa-eye"></i>
     </div>
   `;
   cards.append(dv);
