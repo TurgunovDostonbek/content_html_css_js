@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  position: relative;
+}
+
+.container {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px white;
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+}
+
+.card:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px 12px rgb(223, 8, 8);
+}
+
+.card i {
+  font-size: 50px;
+  color: rgb(238, 224, 224);
+  text-align: center;
+  margin-left: 100px;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(238, 224, 224);
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 94vh;
+  background-color: rgb(102, 77, 125);
+  position: absolute;
+  top: 60px;
+  left: 115px;
+  transform: translateY(-1000px);
+  transition: all 1s;
+  box-shadow: 0 0 10px 12px rgb(216, 206, 206);
+  border-radius: 20px;
+}
+
+i.fa-x {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: rgb(231, 9, 9);
+  cursor: pointer;
+}
